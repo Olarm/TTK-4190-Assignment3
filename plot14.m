@@ -1,4 +1,4 @@
-function plot14(t, r, r_d, psi, psi_d)
+%function plot14(t, r, r_d, psi, psi_d)
 
 figure(1)
 plot(t, psi, "blue", t, psi_d)
