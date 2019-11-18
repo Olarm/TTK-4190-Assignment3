@@ -48,9 +48,10 @@ n_c = 7.3;
 
 %%%% heading PID parameters
 
-Kp = -17.38;
-Kd = 352.69;%Kp * Td;
-Ki = -0.16;%Kp / Ti;
+Kp = 2.5446;
+Kd = 127.2314;
+%Ki = 0.0102;   %Beregnet Ki
+Ki = 0.022;     % manuell tuning
 
 sim MSFartoystyring1 % The measurements from the simulink model are automatically written to the workspace.
 
@@ -60,5 +61,7 @@ plot(t, psi, "blue", t, psi_d)
 figure(2)
 subplot(2,1,1)
 plot(t, r, "blue", t, r_d)
+legend("r", "r_d")
+
 subplot(2,1,2)
 plot(t, n)
