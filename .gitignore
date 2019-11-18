@@ -1,0 +1,9 @@
+.DS_store
+*.git
+MSS
+slprj
+*.m~
+*.slxc
+*.r2016a
+*.mat
+*.swp
