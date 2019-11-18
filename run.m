@@ -55,13 +55,4 @@ Ki = 0.022;     % manuell tuning
 
 sim MSFartoystyring1 % The measurements from the simulink model are automatically written to the workspace.
 
-figure(1)
-plot(t, psi, "blue", t, psi_d)
-
-figure(2)
-subplot(2,1,1)
-plot(t, r, "blue", t, r_d)
-legend("r", "r_d")
-
-subplot(2,1,2)
-plot(t, n)
+plot14(t, r, r_d, psi, psi_d)

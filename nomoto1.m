@@ -24,4 +24,6 @@ function [T, K] = nomoto1()
     T = 1/d(2);
     K = n/d(2);
 
+    
+    
 end
